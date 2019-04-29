@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Assinatura Digital
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p text-center>Aplicativo para Assinatura Digital</p>
+  <button ion-button full (click)="openSignatureModel()">
+    Assinar
+  </button>
+  <div><img [src]="signatureImage" *ngIf="signatureImage" /></div>
+</ion-content>
